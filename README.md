@@ -1,7 +1,7 @@
 # Drexp
 
 ## Description
-Drexp is a tool to extract content from a drupal 6 database to a json file.
+Drexp is a tool to export content from a drupal 6 database to a json file.
 
 Since i looked for a way to export content from a Drupal instance and didn't find any suitable tool, i created this one. It's not very flexible since I only created it to fit my one time need but it's out there if you ever need it.
 
