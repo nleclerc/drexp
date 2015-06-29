@@ -164,7 +164,7 @@ executeQuery('SELECT * FROM content_node_field').then((rows)->
 
 											executeQuerySingle("SELECT * FROM content_type_#{type} WHERE nid = ?",row.nid).then (contentData)->
 												if not row?
-													throw "No content found for #{type}\##{row.nid}"
+													throw new Error "No content found for #{type}\##{row.nid}"
 
 												if DEBUG then console.log 'Processing node:',row.nid,row,contentData
 
