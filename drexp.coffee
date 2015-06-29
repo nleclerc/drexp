@@ -160,7 +160,7 @@ executeQuery('SELECT * FROM content_node_field').then((rows)->
 										promise = promise.then ->
 											nodeData =
 												id: row.nid # rename nid to just id
-											_.defaults nodeData, _.pick(row,'language','title','created','changed')
+											_.defaults nodeData, _.pick(row,'language','title','created','changed','tnid')
 
 											executeQuerySingle("SELECT * FROM content_type_#{type} WHERE nid = ?",row.nid).then (contentData)->
 												if not row?
